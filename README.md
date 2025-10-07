@@ -121,7 +121,8 @@ graph TB
 - 50 MB de espacio libre
 
 ### **Descarga**
-1. Ve a la sección [Releases](https://github.com/DonGeeo87/MisGastos/releases)
+1. Ve a la sección [Releases](https://github.com/DonGeeo87/Mis-Gastos-App/releases)
+))
 2. Descarga el archivo `app-debug.apk`
 3. Habilita "Instalar aplicaciones desconocidas" en tu dispositivo
 4. Instala el APK
