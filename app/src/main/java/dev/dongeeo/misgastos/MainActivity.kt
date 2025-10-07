@@ -6,8 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.unit.dp
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -20,28 +21,33 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MisGastosTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    androidx.compose.foundation.layout.Column(modifier = Modifier.padding(innerPadding)) {
-                        GastoScreen()
-                    }
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    containerColor = MaterialTheme.colorScheme.background
+                ) { innerPadding ->
+                    GastoScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun GastoScreenPreview() {
     MisGastosTheme {
-        GastoScreen()
+        // Preview simplificado sin ViewModel para evitar errores
+        androidx.compose.foundation.layout.Column(
+            modifier = Modifier.fillMaxSize().padding(16.dp)
+        ) {
+            androidx.compose.material3.Text(
+                text = "Preview de Mis Gastos",
+                style = androidx.compose.material3.MaterialTheme.typography.headlineMedium
+            )
+            androidx.compose.material3.Text(
+                text = "Esta es una vista previa simplificada",
+                style = androidx.compose.material3.MaterialTheme.typography.bodyMedium
+            )
+        }
     }
 }

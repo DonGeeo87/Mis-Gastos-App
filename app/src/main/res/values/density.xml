@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reducir densidad global al 75% para hacer la UI más compacta -->
+    <dimen name="global_scale_factor">0.75</dimen>
+</resources>
