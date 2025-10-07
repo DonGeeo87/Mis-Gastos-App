@@ -1,4 +1,4 @@
-# 🚀 Guía de Deployment - MisGastos Landing Page
+# 🚀 Guía de Implementación - Landing Page de MisGastos
 
 ## 📋 Instrucciones para GitHub Pages
 
@@ -14,23 +14,23 @@
 
 ### **Paso 2: Configurar GitHub Pages**
 1. Ve a tu repositorio en GitHub
-2. Haz clic en **Settings** (Configuración)
-3. Desplázate hasta la sección **Pages**
-4. En **Source**, selecciona **Deploy from a branch**
-5. En **Branch**, selecciona **main** (o la rama principal)
-6. En **Folder**, selecciona **/ (root)**
-7. Haz clic en **Save**
+2. Haz clic en **Configuración** (Settings)
+3. Desplázate hasta la sección **Páginas** (Pages)
+4. En **Origen** (Source), selecciona **Implementar desde una rama** (Deploy from a branch)
+5. En **Rama** (Branch), selecciona **main** (o la rama principal)
+6. En **Carpeta** (Folder), selecciona **/ (raíz)**
+7. Haz clic en **Guardar** (Save)
 
-### **Paso 3: Verificar el Deployment**
+### **Paso 3: Verificar la Implementación**
 - Tu sitio estará disponible en: `https://dongeo87.github.io/MisGastos/`
-- El deployment puede tomar unos minutos
-- Puedes ver el progreso en la pestaña **Actions**
+- La implementación puede tomar unos minutos
+- Puedes ver el progreso en la pestaña **Acciones** (Actions)
 
 ### **Paso 4: Personalizar el Dominio (Opcional)**
 Si quieres usar un dominio personalizado:
-1. En la sección **Pages**, agrega tu dominio en **Custom domain**
+1. En la sección **Páginas**, agrega tu dominio en **Dominio personalizado** (Custom domain)
 2. Configura los registros DNS de tu dominio
-3. Habilita **Enforce HTTPS**
+3. Habilita **Forzar HTTPS** (Enforce HTTPS)
 
 ## 🔧 Archivos de Configuración
 
@@ -47,7 +47,7 @@ Si quieres usar un dominio personalizado:
 
 ### **Archivos de Configuración**
 - `.nojekyll` - Desactiva Jekyll en GitHub Pages
-- `_config.yml` - Configuración de Jekyll (backup)
+- `_config.yml` - Configuración de Jekyll (respaldo)
 - `_redirects` - Redirecciones personalizadas
 
 ## 📱 Enlaces Actualizados
@@ -121,14 +121,14 @@ Si quieres usar un dominio personalizado:
 3. **JavaScript no funciona**: Verifica consola del navegador
 4. **Imágenes no cargan**: Verifica URLs de Cloudinary
 
-### **Debugging**
+### **Depuración**
 - Usa las herramientas de desarrollador del navegador
 - Verifica la consola para errores JavaScript
-- Revisa el Network tab para recursos que no cargan
+- Revisa la pestaña Network para recursos que no cargan
 - Usa PageSpeed Insights para optimizaciones
 
 ---
 
 **Desarrollado por**: Giorgio Interdonato Palacios  
 **GitHub**: [@DonGeeo87](https://github.com/DonGeeo87)  
-**Fecha**: Enero 2025
+**Fecha**: Octubre 2025

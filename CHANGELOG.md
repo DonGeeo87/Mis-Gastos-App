@@ -5,7 +5,7 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.3.0] - 07-01-2025
+## [1.3.0] - 07-10-2025
 
 ### Agregado
 - **Funcionalidad de eliminar gastos individuales** - Botón rojo de basura en cada gasto
@@ -24,7 +24,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - Implementadas funciones helper para UI compacta
 - Mejorado manejo de errores en operaciones de eliminación
 
-## [1.2.0] - 07-01-2025
+## [1.2.0] - 07-10-2025
 
 ### Agregado
 - **Persistencia de datos con Room Database** - Los gastos ahora se guardan permanentemente
