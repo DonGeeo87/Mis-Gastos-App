@@ -2,7 +2,8 @@
 
 Autor: Giorgio Interdonato Palacios  
 Estudiante Bootcamp Desarrollo de Aplicaciones en Android  
-GitHub: @DonGeeo87
+GitHub: @DonGeeo87  
+Fecha: 07-10-2025
 
 ## ¿Qué patrón usé y por qué?
 Usé el patrón MVVM (Model–View–ViewModel). Este patrón separa la lógica de negocio (Model y ViewModel) de la interfaz (View). Así el código es más ordenado, fácil de mantener y escalar. También funciona muy bien con los componentes de arquitectura de Jetpack como `ViewModel` y `LiveData`, permitiendo que la vista observe cambios de datos sin manejar lógica compleja.
