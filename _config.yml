@@ -1,0 +1,69 @@
+# Configuración para GitHub Pages
+title: MisGastos - Control de Gastos Personal
+description: Una aplicación moderna para el control de gastos personales desarrollada en Android con Kotlin y Jetpack Compose
+author: Giorgio Interdonato Palacios
+url: https://dongeo87.github.io/MisGastos
+baseurl: /MisGastos
+
+# Configuración de plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Configuración de build
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Configuración de colecciones
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Configuración de defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Configuración de exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - README-APP.md
+  - CHANGELOG.md
+  - informe.md
+  - .gitignore
+  - .gitattributes
+  - app/
+  - build.gradle.kts
+  - settings.gradle.kts
+  - gradle.properties
+  - gradlew
+  - gradlew.bat
+  - local.properties
+  - MisGastos-v1.3.0.apk
+
+# Configuración de include
+include:
+  - _redirects
+
+# Configuración de permalinks
+permalink: /:title/
+
+# Configuración de timezone
+timezone: America/Santiago
+
+# Configuración de encoding
+encoding: utf-8

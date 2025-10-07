@@ -1,0 +1,9 @@
+# Redirecciones para GitHub Pages
+# Redirigir la raíz a index.html
+/ /index.html 200
+
+# Redirecciones de API (si se necesitan en el futuro)
+/api/* /404.html 404
+
+# Redirecciones de archivos estáticos
+/assets/* /assets/:splat 200

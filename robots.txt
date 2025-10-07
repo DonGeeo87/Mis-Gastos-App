@@ -1,0 +1,30 @@
+# Robots.txt para MisGastos Landing Page
+# https://dongeo87.github.io/MisGastos/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dongeo87.github.io/MisGastos/sitemap.xml
+
+# Crawl-delay para ser amigables con los servidores
+Crawl-delay: 1
+
+# Permitir acceso a recursos estáticos
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
+
+# Desallow archivos de configuración
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /*.log
+Disallow: /*.tmp

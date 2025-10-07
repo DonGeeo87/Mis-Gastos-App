@@ -1,15 +1,77 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# ===== ARCHIVOS DEL SISTEMA =====
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== EDITORES =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== LOGS =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== DEPENDENCIAS =====
+node_modules/
+bower_components/
+
+# ===== BUILD Y DIST =====
+dist/
+build/
+*.min.css
+*.min.js
+
+# ===== ARCHIVOS TEMPORALES =====
+*.tmp
+*.temp
+.cache/
+
+# ===== CONFIGURACIÓN LOCAL =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== ARCHIVOS DE BACKUP =====
+*.bak
+*.backup
+*.old
+
+# ===== ARCHIVOS DE TESTING =====
+coverage/
+.nyc_output/
+test-results/
+
+# ===== ARCHIVOS ESPECÍFICOS DEL PROYECTO =====
+# Mantener estos archivos en el repositorio:
+# - index.html
+# - styles.css
+# - script.js
+# - README.md
+# - assets/
+
+# ===== ARCHIVOS DE DESARROLLO =====
+*.dev.html
+*.dev.css
+*.dev.js
+dev/
+development/
+
+# ===== ARCHIVOS DE CONFIGURACIÓN SENSIBLES =====
+config.json
+secrets.json
+credentials.json
+
+# ===== ARCHIVOS DE OPTIMIZACIÓN =====
+*.map
+*.sourcemap

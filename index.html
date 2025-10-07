@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MisGastos - Una aplicación moderna para el control de gastos personales desarrollada en Android con Kotlin y Jetpack Compose">
+    <meta name="keywords" content="gastos, finanzas, android, kotlin, jetpack compose, presupuesto, dinero">
+    <meta name="author" content="Giorgio Interdonato Palacios">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dongeo87.github.io/MisGastos/">
+    <meta property="og:title" content="MisGastos - Control de Gastos Personal">
+    <meta property="og:description" content="Una aplicación moderna para el control de gastos personales desarrollada en Android con Kotlin y Jetpack Compose">
+    <meta property="og:image" content="https://dongeo87.github.io/MisGastos/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dongeo87.github.io/MisGastos/">
+    <meta property="twitter:title" content="MisGastos - Control de Gastos Personal">
+    <meta property="twitter:description" content="Una aplicación moderna para el control de gastos personales desarrollada en Android con Kotlin y Jetpack Compose">
+    <meta property="twitter:image" content="https://dongeo87.github.io/MisGastos/assets/og-image.png">
+
+    <title>MisGastos - Control de Gastos Personal</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-wallet"></i>
+                <span>MisGastos</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#screenshots" class="nav-link">Capturas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">Descargar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Acerca de</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Controla tus gastos</span>
+                        <br>de manera inteligente
+                    </h1>
+                    <p class="hero-description">
+                        Una aplicación moderna para el control de gastos personales desarrollada en Android 
+                        con Kotlin y Jetpack Compose. Gestiona tu dinero de forma eficiente y visual.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge">
+                            <i class="fab fa-android"></i>
+                            Android
+                        </span>
+                        <span class="badge">
+                            <i class="fab fa-kotlin"></i>
+                            Kotlin
+                        </span>
+                        <span class="badge">
+                            <i class="fas fa-mobile-alt"></i>
+                            Jetpack Compose
+                        </span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.0/MisGastos-v1.3.0.apk" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Descargar APK
+                        </a>
+                        <a href="https://github.com/DonGeeo87/Mis-Gastos-App" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <img src="https://res.cloudinary.com/dr6znho9h/image/upload/w_300,h_auto,f_auto,q_auto/v1759880263/Screenshot_-_Mis_Gastos_App_-_Home_3_Gastos_ejtrkn.jpg" 
+                             alt="MisGastos - Captura real de la aplicación con 3 gastos" 
+                             class="hero-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Características Principales</h2>
+                <p class="section-description">
+                    Descubre todas las funcionalidades que hacen de MisGastos la mejor opción para controlar tus finanzas
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="feature-title">Interfaz Moderna</h3>
+                    <p class="feature-description">
+                        Diseño Material Design 3 con colores de marca personalizados y componentes reutilizables
+                    </p>
+                    <ul class="feature-list">
+                        <li>Header elegante con gradiente</li>
+                        <li>Componentes consistentes</li>
+                        <li>Tema personalizado</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="feature-title">15 Categorías Predefinidas</h3>
+                    <p class="feature-description">
+                        Categorías con emojis intuitivos para clasificar todos tus gastos de manera visual
+                    </p>
+                    <ul class="feature-list">
+                        <li>Selector visual con scroll</li>
+                        <li>Categorías personalizadas</li>
+                        <li>Formato moneda chilena</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="feature-title">Persistencia de Datos</h3>
+                    <p class="feature-description">
+                        Room Database para almacenamiento local seguro y operaciones asíncronas eficientes
+                    </p>
+                    <ul class="feature-list">
+                        <li>Base de datos local</li>
+                        <li>Operaciones asíncronas</li>
+                        <li>Arquitectura MVVM</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Cálculos Automáticos</h3>
+                    <p class="feature-description">
+                        Total de gastos calculado automáticamente y mostrado en tiempo real en el header
+                    </p>
+                    <ul class="feature-list">
+                        <li>Cálculo en tiempo real</li>
+                        <li>Formato de moneda CLP</li>
+                        <li>Separadores de miles</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">UI Compacta</h3>
+                    <p class="feature-description">
+                        Interfaz optimizada que aprovecha el 75% del espacio para una mejor experiencia de usuario
+                    </p>
+                    <ul class="feature-list">
+                        <li>Diseño compacto</li>
+                        <li>Mejor aprovechamiento</li>
+                        <li>UX optimizada</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Gestión de Gastos</h3>
+                    <p class="feature-description">
+                        Controla tus gastos con eliminación individual y masiva, manteniendo tu lista organizada
+                    </p>
+                    <ul class="feature-list">
+                        <li>Eliminación individual</li>
+                        <li>Eliminación masiva</li>
+                        <li>Interfaz intuitiva</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Capturas de Pantalla</h2>
+                <p class="section-description">
+                    Descubre la interfaz intuitiva y moderna de MisGastos
+                </p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <img src="https://res.cloudinary.com/dr6znho9h/image/upload/w_400,h_auto,f_auto,q_auto/v1759880263/Screenshot_-_Mis_Gastos_App_-_Home_3_Gastos_ejtrkn.jpg" 
+                             alt="MisGastos - Pantalla Principal con 3 gastos" 
+                             class="screenshot-image"
+                             loading="lazy">
+                    </div>
+                    <h3>Pantalla Principal</h3>
+                    <p>Interfaz moderna con gastos registrados y total calculado automáticamente</p>
+                </div>
+
+                <div class="screenshot-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <img src="https://res.cloudinary.com/dr6znho9h/image/upload/w_400,h_auto,f_auto,q_auto/v1759880263/Screenshot_-_Mis_Gastos_App_-_Home_2_Gastos_jaishi.jpg" 
+                             alt="MisGastos - Pantalla con 2 gastos registrados" 
+                             class="screenshot-image"
+                             loading="lazy">
+                    </div>
+                    <h3>Gestión de Gastos</h3>
+                    <p>Control completo de gastos con categorías predefinidas y eliminación individual</p>
+                </div>
+
+                <div class="screenshot-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <img src="https://res.cloudinary.com/dr6znho9h/image/upload/w_400,h_auto,f_auto,q_auto/v1759880263/Screenshot_-_Mis_Gastos_App_-_Home_Empty_phirzc.jpg" 
+                             alt="MisGastos - Pantalla inicial sin gastos" 
+                             class="screenshot-image"
+                             loading="lazy">
+                    </div>
+                    <h3>Estado Inicial</h3>
+                    <p>Interfaz limpia y moderna cuando no hay gastos registrados, lista para comenzar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">¡Descarga MisGastos ahora!</h2>
+                    <p class="download-description">
+                        Comienza a controlar tus gastos de manera inteligente. 
+                        La aplicación está lista para instalar en tu dispositivo Android.
+                    </p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Android 7.0+</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-download"></i>
+                            <span>50 MB</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sin permisos especiales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-actions">
+                    <a href="https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.0/MisGastos-v1.3.0.apk" class="download-btn" target="_blank">
+                        <div class="download-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="download-text-btn">
+                            <span class="download-label">Descargar APK</span>
+                            <span class="download-version">v1.3.0</span>
+                        </div>
+                    </a>
+                    <div class="download-steps">
+                        <h4>Instalación:</h4>
+                        <ol>
+                            <li>Descarga el archivo APK</li>
+                            <li>Habilita "Instalar aplicaciones desconocidas"</li>
+                            <li>Instala y disfruta</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Acerca del Proyecto</h2>
+                    <p class="about-description">
+                        MisGastos es una aplicación desarrollada con las mejores prácticas de Android, 
+                        utilizando tecnologías modernas como Kotlin y Jetpack Compose. 
+                        El proyecto sigue una arquitectura MVVM robusta y está diseñado para ser escalable y mantenible.
+                    </p>
+                    <div class="tech-stack">
+                        <h3>Tecnologías Utilizadas</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-kotlin"></i>
+                                <span>Kotlin</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Jetpack Compose</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>Room Database</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-arrows-alt"></i>
+                                <span>MVVM Pattern</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Corrutinas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-author">
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 class="author-name">Giorgio Interdonato Palacios</h3>
+                        <p class="author-title">Desarrollador Android</p>
+                        <div class="author-links">
+                            <a href="https://github.com/DonGeeo87" target="_blank" class="author-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                        <p class="author-bio">
+                            Desarrollador apasionado por crear aplicaciones móviles innovadoras 
+                            con las mejores prácticas y tecnologías modernas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-wallet"></i>
+                        <span>MisGastos</span>
+                    </div>
+                    <p class="footer-description">
+                        Controla tus gastos de manera inteligente con nuestra aplicación moderna.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Enlaces</h4>
+                        <ul>
+                            <li><a href="https://github.com/DonGeeo87/Mis-Gastos-App" target="_blank">GitHub</a></li>
+                            <li><a href="https://github.com/DonGeeo87/Mis-Gastos-App/releases" target="_blank">Releases</a></li>
+                            <li><a href="https://github.com/DonGeeo87/Mis-Gastos-App/blob/main/README.md" target="_blank">Documentación</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Proyecto</h4>
+                        <ul>
+                            <li><a href="#features">Características</a></li>
+                            <li><a href="#screenshots">Capturas</a></li>
+                            <li><a href="#about">Acerca de</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="https://github.com/DonGeeo87" target="_blank">GitHub @DonGeeo87</a></li>
+                            <li><a href="mailto:contacto@ejemplo.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Giorgio Interdonato Palacios. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ usando tecnologías modernas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
