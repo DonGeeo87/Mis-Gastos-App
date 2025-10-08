@@ -154,14 +154,17 @@ fun GastoScreen(
                                     CategoriasPredefinidas.obtenerPorId(id)?.nombre ?: id
                                 } ?: ""
                                 
-                                if (monto > 0 && nombre.isNotBlank() && categoriaNombre.isNotBlank()) {
+                                // Validación mejorada
+                                if (monto > 0 && nombre.trim().isNotBlank() && categoriaNombre.isNotBlank()) {
                                     viewModel.agregarGasto(nombre.trim(), categoriaNombre, monto)
+                                    // Limpiar formulario después de agregar
                                     nombre = ""
                                     categoriaSeleccionada = null
                                     montoText = ""
                                 }
                             } catch (e: Exception) {
-                                // Manejo de errores silencioso para evitar crashes
+                                // Manejo de errores con logging
+                                android.util.Log.e("GastoScreen", "Error al agregar gasto", e)
                                 e.printStackTrace()
                             }
                         },
@@ -217,16 +220,20 @@ fun GastoScreen(
                     }
                 }
             } else {
-                LazyColumn(
+                Box(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(300.dp), // Altura reducida para UI más compacta
-                    verticalArrangement = Arrangement.spacedBy(8.dp),
-                    contentPadding = PaddingValues(vertical = 8.dp)
+                        .weight(1f) // Permitir que el Box se expanda
                 ) {
-                    items(gastos.reversed()) { gasto ->
-                        GastoItem(gasto) { gastoToDelete ->
-                            viewModel.eliminarGasto(gastoToDelete)
+                    LazyColumn(
+                        modifier = Modifier.fillMaxSize(),
+                        verticalArrangement = Arrangement.spacedBy(8.dp),
+                        contentPadding = PaddingValues(vertical = 8.dp)
+                    ) {
+                        items(gastos.reversed()) { gasto ->
+                            GastoItem(gasto) { gastoToDelete ->
+                                viewModel.eliminarGasto(gastoToDelete)
+                            }
                         }
                     }
                 }

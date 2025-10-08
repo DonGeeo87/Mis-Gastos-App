@@ -21,14 +21,21 @@ class GastoViewModel(application: Application) : AndroidViewModel(application) {
 
     // Agrega un gasto usando corrutinas para operaciones de base de datos
     fun agregarGasto(nombre: String, categoria: String, monto: Int) {
-        if (nombre.isBlank() || categoria.isBlank() || monto <= 0) return
+        if (nombre.isBlank() || categoria.isBlank() || monto <= 0) {
+            android.util.Log.w("GastoViewModel", "Datos inválidos: nombre='$nombre', categoria='$categoria', monto=$monto")
+            return
+        }
+        
+        android.util.Log.d("GastoViewModel", "Agregando gasto: $nombre, $categoria, $monto")
         
         viewModelScope.launch {
             try {
                 val gasto = Gasto(name = nombre.trim(), category = categoria.trim(), amount = monto)
                 repository.addGasto(gasto)
+                android.util.Log.d("GastoViewModel", "Gasto agregado exitosamente")
             } catch (e: Exception) {
                 // Manejo de errores - en producción podrías mostrar un Toast o Snackbar
+                android.util.Log.e("GastoViewModel", "Error al agregar gasto", e)
                 e.printStackTrace()
             }
         }
