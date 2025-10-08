@@ -326,8 +326,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ### **Giorgio Interdonato Palacios**
 - 🌐 **GitHub**: [@DonGeeo87](https://github.com/DonGeeo87)
-- 📧 **Email**: [contacto@ejemplo.com]
-- 💼 **LinkedIn**: [tu-linkedin]
 
 ---
 
