@@ -53,7 +53,7 @@ Si quieres usar un dominio personalizado:
 ## 📱 Enlaces Actualizados
 
 ### **Enlaces de Descarga**
-- **APK Directo**: `https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.0/MisGastos-v1.3.0.apk`
+- **APK Directo**: `https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.1/MisGastos-v1.3.1-release.apk`
 - **Repositorio App**: `https://github.com/DonGeeo87/Mis-Gastos-App`
 - **Releases**: `https://github.com/DonGeeo87/Mis-Gastos-App/releases`
 

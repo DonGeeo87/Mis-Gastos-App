@@ -5,6 +5,19 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 07-10-2025
+
+### Corregido
+- **Bug de scroll en LazyColumn** - LazyColumn ahora usa `weight(1f)` en lugar de altura fija para permitir scroll correcto
+- **Validación del botón agregar gasto** - Mejorada con `trim()` y `isNotBlank()` para evitar datos vacíos
+- **Distribución de espacio** - Wrapper Box con `weight(1f)` para distribución correcta del espacio disponible
+- **Problema reportado** - Scroll no funcionaba después del 3er gasto, ahora resuelto
+
+### Mejorado
+- **Logging adicional** - Agregado en GastoScreen y GastoViewModel para mejor debugging
+- **Manejo de errores** - Más robusto en la función agregar gasto
+- **Performance** - LazyColumn optimizado para mejor rendimiento con listas largas
+
 ## [1.3.0] - 07-10-2025
 
 ### Agregado

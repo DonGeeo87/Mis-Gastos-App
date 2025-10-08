@@ -121,7 +121,7 @@ graph TB
 
 ### **Descarga**
 1. Ve a la sección [Releases](https://github.com/DonGeeo87/Mis-Gastos-App/releases)
-2. Descarga el archivo `MisGastos-v1.3.0.apk`
+2. Descarga el archivo `MisGastos-v1.3.1-release.apk`
 3. Habilita "Instalar aplicaciones desconocidas" en tu dispositivo
 4. Instala el APK
 
@@ -222,6 +222,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 Desarrollado con ❤️ por [Giorgio Interdonato Palacios](https://github.com/DonGeeo87)
 
-[📱 Descargar APK](https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.0/MisGastos-v1.3.0.apk) | [🌐 Landing Page](https://dongeo87.github.io/MisGastos/) | [📖 Documentación](https://github.com/DonGeeo87/Mis-Gastos-App/blob/main/README.md)
+[📱 Descargar APK](https://github.com/DonGeeo87/Mis-Gastos-App/releases/download/v1.3.1/MisGastos-v1.3.1-release.apk) | [🌐 Landing Page](https://dongeo87.github.io/MisGastos/) | [📖 Documentación](https://github.com/DonGeeo87/Mis-Gastos-App/blob/main/README.md)
 
 </div>
