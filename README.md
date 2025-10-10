@@ -1,4 +1,4 @@
-# 💰 MisGastos - Landing Page
+# 💰 MisGastos APP
 
 <div align="center">
 
@@ -335,6 +335,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 Desarrollado con ❤️ por [Giorgio Interdonato Palacios](https://github.com/DonGeeo87)
 
-[🌐 Ver en Vivo](https://dongeo87.github.io/MisGastos/) | [📱 App Android](https://github.com/DonGeeo87/MisGastos) | [📖 Documentación](https://github.com/DonGeeo87/MisGastos/blob/main/README.md)
+[🌐 Ver en Vivo](https://dongeo87.github.io/Mis-Gastos-App/) | [📱 App Android](https://github.com/DonGeeo87/Mis-Gastos-App) | [📖 Documentación](https://github.com/DonGeeo87/Mis-Gastos-App/blob/main/README.md)
 
 </div>
